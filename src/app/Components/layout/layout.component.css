@@ -1,0 +1,8 @@
+.inline-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inline-item mat-icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+  }
