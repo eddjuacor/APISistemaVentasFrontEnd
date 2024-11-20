@@ -61,10 +61,11 @@ export class DashboardComponent implements OnInit {
           this.totalProductos = data.value.totalProductos;
 
           const arrayData:any[]=data.value.ventasUltimaSemana;
+          console.log(data.value.ventasUltimaSemana)
 
           const labelTemp = arrayData.map((value)=> value.fecha);
           const dataTemp = arrayData.map((value)=> value.total);
-          console.log(labelTemp, dataTemp);
+          console.log(labelTemp,dataTemp)
           this.mostrarGraficos(labelTemp,dataTemp);
         }
       },
